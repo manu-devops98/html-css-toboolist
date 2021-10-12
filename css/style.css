@@ -146,6 +146,7 @@ h4{font-size: 0.6em;
 .checkbox-round-allert {
     width: 1.6em;
     height: 1.6em;
+    margin-left: -5%;
     background-color: white;
     border-radius: 50%;
     vertical-align: middle;
