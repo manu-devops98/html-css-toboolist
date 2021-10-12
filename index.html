@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <title>ToBoolist</title>
 </head>
@@ -13,9 +15,6 @@
     <header>
        <img src="img/logo.png" alt="logo Boolean">
        <h1>Toboolist</h1>
-
-
-
     </header>
     <!-- fine Header -->
 
@@ -23,56 +22,115 @@
     <main class="container"> 
         
         <!-- sezione contenitore lista -->
-       <section class="container-lista">
+       <section class="container-centrale">
 
         <!-- sezione bottoni -->
-          <div class="button-section">
-            <button class="button" id="task-button">Add Task</button>
-            <button class="button" id="section-button">Add Section</button>
+          <div class="button-container">
+            <button class="button" id="bottone-1">Add Task</button>
+            <button class="button" id="bottone-2">Add Section</button>
             </div>
         <!-- fine sezione bottoni -->
 
         <!-- sezione elenchi -->
-        <section class="list-section">
+        <section class="contenitore-elenchi">
 
-        <ul>
-            <li>New Task
-                <ul>
-                    <li>Quaterly Newsletter</li>
-                </ul>
-            </li>
-            <li>Today
-                <ul>
-                    <li>Recruiting blog post</li>
-                    <li>Mobile app launch</li>
-                    <li>Interview John H.</li>
-                    <li>Summit update to mobile storefronts</li>
-                </ul>
-            </li>
-            <li>Upcoming
-                <ul>
-                    <li>Schedule meeting with Alex</li>
-                    <li>Homepage refresh</li>
-                    <li>Onboard new sales team members</li>
-                    <li>Review editorial calendar</li>
-                </ul>
-            </li>
-        </ul>
+            <ul class="lista">
+                <!-- 1° elemento lista  -->
+               <li>
+                   <h2 id="elem-lista-1">&#10597; New Task</h2> 
+                     <ul>
+                         <li class="lista">
+                             <button type="button" class="checkbox-round" style="color:#a5ddd1;">&#10004;</button>
+                             <h3>Quaterly Newsletter</h3>
+                             <div class="list-item" id="editorial">
+                                 <h4>Editorial</h4>
+                             </div>
+                         </li>
+                     </ul>
+               </li>
+                
+               <!-- 2° elemento lista  -->
+                 <li>
+                     <h2>&#10597; Today</h2>
+                      <ul>
+                          <li class="lista">
+                              <button type="button" class="checkbox-round" style="color:#a5ddd1;">&#10004;</button>
+                              <h3>Recruiting Blogpost</h3>
+                              <div class="list-item" id="editorial">
+                                  <h4>Editorial</h4>
+                              </div>
+                          </li>
 
+                          <li class="lista">
+                              <button type="button" class="checkbox-round" style="color:#a5ddd1;">&#10004;</button>
+                              <h3>Mobile app launch </h3>
+                              <div class="list-item" id="goal">
+                                  <h4>Q1 Goals</h4>
+                              </div>
+                          </li>
+
+                          <li class="lista">
+                              <button type="button" class="checkbox-round-allert" style="color:red;">&#10007;</button>
+                              <h3>Interview John H. </h3>
+                              <div class="list-item" id="recruiting">
+                                  <h4>Recruiting</h4>
+                              </div>
+                          </li>
+
+                          <li class="lista">
+                              <button type="button" class="checkbox-round" style="color:#a5ddd1;">&#10004;</button>
+                              <h3>Summit update to mobile storefronts </h3>
+                              <div class="list-item" id="mobile">
+                                  <h4>Mobile</h4>
+                              </div>
+                          </li>
+
+                      </ul>
+                 </li>
+
+                 <!-- 3 elemento lista -->
+                 <li>
+                    <h2>&#10597; Upcoming</h2>
+                     <ul>
+                         <li class="lista">
+                             <button type="button" class="checkbox-round-allert" style="color:red;">&#10007;</button>
+                             <h3>Schedule meeting with Alex</h3>
+                         </li>
+
+                         <li class="lista">
+                             <button type="button" class="checkbox-round" style="color:#a5ddd1;">&#10004;</button>
+                             <h3>Homepage refresh</h3>
+                             <div class="list-item" id="sales">
+                                 <h4>Website</h4>
+                             </div>
+                         </li>
+
+                         <li class="lista">
+                             <button type="button" class="checkbox-round" style="color:#a5ddd1;">&#10004;</button>
+                             <h3>Onboard new sales team members</h3>
+                             <div class="list-item">
+                                 <h4>Sales</h4>
+                             </div>
+                         </li>
+                         
+                         <li class="lista">
+                             <button type="button" class="checkbox-round" style="color:#a5ddd1;">&#10004;</button>
+                             <h3>Review editorial calendar</h3>
+                             <div class="list-item" id="editorial">
+                                 <h4>Editorial</h4>
+                             </div>
+                         </li>
+
+                     </ul>
+                </li>
+
+            </ul>
         </section>
         <!-- fine sezione elenchi -->
 
-
-
-
-
-
-
-
-
-
        </section>
         <!--fine sezione contenitore lista -->
+
     </main>
     <!-- fine main  -->
 
